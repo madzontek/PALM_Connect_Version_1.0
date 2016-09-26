@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mentor.Views.Area"
+             BackgroundColor="#FFFFFF"
+             Title="Study Area">
+    <StackLayout Orientation="Vertical" Padding="10, 20">
+        <StackLayout Orientation="Horizontal" Spacing="10" Padding="20, 0">
+            <Label Text="Select Study Area" FontSize="20" VerticalTextAlignment="Center" TextColor="#808080" HorizontalTextAlignment="Start" />
+            <Image Source="palmlogo.jpg" Aspect="AspectFit" HeightRequest="70" WidthRequest="70" HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+        <StackLayout>
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Padding="20" Spacing="5">
+                    <Label Text="Select Study Area" FontSize="20" VerticalTextAlignment="Center" TextColor="#808080" HorizontalTextAlignment="Start" />
+                    <Button Clicked="Area1Btn_Clicked" Text="Area 1" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area2Btn_Clicked" Text="Area 2" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area3Btn_Clicked" Text="Area 3" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area4Btn_Clicked" Text="Area 4" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area5Btn_Clicked" Text="Area 5" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area6Btn_Clicked" Text="Area 6" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area7Btn_Clicked" Text="Area 7" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area8Btn_Clicked" Text="Area 8" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area9Btn_Clicked" Text="Area 9" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Area10Btn_Clicked" Text="Area 10" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

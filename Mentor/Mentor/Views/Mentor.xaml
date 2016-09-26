@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mentor.Views.Mentor"
+             BackgroundColor="#FFFFFF"
+             Title="Mentors">
+
+    <StackLayout Orientation="Vertical" Padding="10, 20">
+        <StackLayout Orientation="Horizontal" Padding="20, 0">
+            <Label Text="Select Mentor" FontSize="20" VerticalTextAlignment="Center"  HorizontalTextAlignment="Start" TextColor="#808080" />
+            <Image Source="palmlogo.jpg" Aspect="AspectFit" HeightRequest="70" WidthRequest="70" HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+        <StackLayout>
+            <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout Padding="20" Spacing="5">
+                    <Label x:Name="StudyArea" FontSize="20" VerticalTextAlignment="Center" TextColor="#808080" HorizontalTextAlignment="Start" />
+                    <Button Clicked="Mentor1Btn_Clicked" Text="Mentor 1" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor2Btn_Clicked" Text="Mentor 2" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor3Btn_Clicked" Text="Mentor 3" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor4Btn_Clicked" Text="Mentor 4" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor5Btn_Clicked" Text="Mentor 5" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor6Btn_Clicked" Text="Mentor 6" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor7Btn_Clicked" Text="Mentor 7" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor8Btn_Clicked" Text="Mentor 8" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor9Btn_Clicked" Text="Mentor 9" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                    <Button Clicked="Mentor10Btn_Clicked" Text="Mentor 10" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HeightRequest="40" WidthRequest="180" />
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

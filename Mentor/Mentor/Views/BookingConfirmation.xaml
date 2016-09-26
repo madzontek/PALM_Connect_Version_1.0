@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mentor.Views.BookingConfirmation"
+             BackgroundColor="#FFFFFF"
+             Title="Confirm Booking">
+    <StackLayout Orientation="Vertical" Padding="0, 10">
+        <StackLayout Orientation="Horizontal" Spacing="10" Padding="20, 0">
+            <Label Text="Your Booking" FontSize="20" VerticalTextAlignment="Center" TextColor="#808080" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" />
+            <Image Source="palmlogo.jpg" Aspect="AspectFit" HeightRequest="70" WidthRequest="70" HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical" Padding="20">
+            <Frame OutlineColor="#000000" HasShadow="True">
+                <StackLayout Orientation="Vertical" Spacing="0">
+                    <Label x:Name="Area" FontAttributes="Bold" BackgroundColor="#08AE9E" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                    <Label Text="with" FontAttributes="Bold" TextColor="#808080" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                    <Label x:Name="Mentor" FontAttributes="Bold" BackgroundColor="#08AE9E" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                    <Label Text="on" FontAttributes="Bold" TextColor="#808080" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                    <Label x:Name="MeetingDate" FontAttributes="Bold" BackgroundColor="#08AE9E" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                    <Label Text="at" FontAttributes="Bold" TextColor="#808080" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                    <Label x:Name="MeetingTime" FontAttributes="Bold" BackgroundColor="#08AE9E" TextColor="#FFFFFF" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="30" />
+                </StackLayout>
+            </Frame>
+            <StackLayout Orientation="Horizontal" Padding="0,20,0,0" HorizontalOptions="Fill" VerticalOptions="End">
+                <Button Text="Deactive" Clicked="DeactiveBtn_Clicked" BackgroundColor="#08AE9E" TextColor="White" WidthRequest="130" HorizontalOptions="StartAndExpand" />
+                <Button Text="Confirm" Clicked="ConfirmBtn_Clicked" BackgroundColor="#08AE9E" TextColor="White" WidthRequest="130" HorizontalOptions="EndAndExpand" />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

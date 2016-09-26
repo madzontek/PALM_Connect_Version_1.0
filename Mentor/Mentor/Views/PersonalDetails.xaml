@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mentor.Views.PersonalDetails"
+             BackgroundColor="#FFFFFF"
+             Title="Personal Details">
+
+    <StackLayout Orientation="Vertical" Padding="20, 10">
+        <StackLayout Orientation="Horizontal" Spacing="10" Padding="20, 0">
+            <Label Text="Your Booking" FontSize="18" VerticalTextAlignment="Center" TextColor="#808080" HorizontalTextAlignment="Start" />
+            <Image Source="palmlogo.jpg" Aspect="AspectFit" HeightRequest="70" WidthRequest="70" HorizontalOptions="EndAndExpand" />
+        </StackLayout>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical" Padding="0,30,0,0" Spacing="10">
+                <Frame OutlineColor="#000000" HasShadow="True">
+                    <StackLayout Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal" Spacing="5">
+                            <Label Text="Name" FontSize="15" TextColor="#808080" VerticalTextAlignment="Center" />
+                            <Entry x:Name="Name" TextColor="#808080" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="30">
+                            <Label Text="ID" FontSize="15" TextColor="#808080" VerticalTextAlignment="Center" />
+                            <Entry x:Name="ID" TextColor="#808080" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="5">
+                            <Label Text="Email" FontSize="15" TextColor="#808080" VerticalTextAlignment="Center" />
+                            <Entry x:Name="Email" Keyboard="Email" TextColor="#808080" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="Phone" FontSize="15" TextColor="#808080" VerticalTextAlignment="Center" />
+                            <Entry x:Name="Phone" Keyboard="Telephone" TextColor="#808080" HorizontalOptions="FillAndExpand" HeightRequest="40" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Button Text="Submit" Clicked="SubmitBtn_Clicked" WidthRequest="180" HeightRequest="45" TextColor="#FFFFFF" BackgroundColor="#08AE9E" HorizontalOptions="Center" Margin="0,10,0,0" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+
+</ContentPage>
